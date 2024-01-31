@@ -1,9 +1,9 @@
-export const Contact = ({ users: { name, number } }) => {
+export const Contact = ({ users: { name, number, id }, deletbut }) => {
   return (
     <div>
       <p>{name}</p>
       <p>{number}</p>
-      <button>Del</button>
+      <button onClick={() => deletbut(id)}>Del</button>
     </div>
   );
 };
