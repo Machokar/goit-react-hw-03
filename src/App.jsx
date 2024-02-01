@@ -34,7 +34,6 @@ export const App = () => {
   );
   return (
     <div>
-      <h1>Phonebook</h1>
       <Contactform addusers={addusers} />
       <Searchbox values={inputv} onChanges={setinputv} />
       <Contactlist avalibleusers={avalibleusers} deletbut={deletUser} />
